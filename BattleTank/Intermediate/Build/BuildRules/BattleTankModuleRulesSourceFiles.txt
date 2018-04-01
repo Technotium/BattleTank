@@ -1,0 +1,3 @@
+J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source\BattleTank\BattleTank.Build.cs
+J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source\BattleTank.Target.cs
+J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source\BattleTankEditor.Target.cs
