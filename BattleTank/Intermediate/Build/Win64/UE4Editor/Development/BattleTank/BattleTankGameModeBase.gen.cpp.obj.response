@@ -24,6 +24,7 @@
 /w44668
 /I "J:\Unreal Editor\UE_4.19\Engine\Source"
 /I "J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source"
+/I "J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source\BattleTank\Public"
 /I "J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Inc\BattleTank"
 /I "J:\Unreal Projects\Udemy\C++Basics\04_BattleTank\BattleTank\Source\BattleTank"
 /I "J:\Unreal Editor\UE_4.19\Engine\Source\Runtime\Core\Public"
