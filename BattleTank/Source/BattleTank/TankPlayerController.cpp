@@ -13,5 +13,5 @@ void ATankPlayerController::BeginPlay() {
 	myTank = getControlledTank();
 	if (!myTank) { UE_LOG(LogTemp, Warning, TEXT("No tank associated with TankPlayerController")); return; }
 
-	UE_LOG(LogTemp, Display, TEXT("%s found by TankPlayerController!"), *myTank->GetName());
-}
+	//UE_LOG(LogTemp, Display, TEXT("%s found by TankPlayerController!"), *myTank->GetName());
+};

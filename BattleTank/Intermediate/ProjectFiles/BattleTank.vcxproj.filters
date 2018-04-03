@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\BattleTank.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{B5FB4681-171F-4D2C-9E7F-1855177F3C8B}</UniqueIdentifier>
+			<UniqueIdentifier>{887A5401-AAB7-472B-9020-D7CD6F8D13F0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{87BFEF05-5897-4BBD-89EC-7C2388306160}</UniqueIdentifier>
+			<UniqueIdentifier>{C31A2E65-2BF1-4946-AAC1-0FB9F89F2F96}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\BattleTank">
-			<UniqueIdentifier>{E3F343BD-C9FE-4AB1-8AEB-41DF47EDD279}</UniqueIdentifier>
+			<UniqueIdentifier>{40B4401B-F8CC-40D2-923C-B4DBB69BA972}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank\BattleTank.Build.cs">
 			<Filter>Source\BattleTank</Filter>
@@ -52,14 +52,20 @@
 			<Filter>Source\BattleTank</Filter>
 		</ClInclude >
 		<Filter Include="Source\BattleTank\Private">
-			<UniqueIdentifier>{764373E6-6FA1-4DDD-8F40-7D3C0B6F7C72}</UniqueIdentifier>
+			<UniqueIdentifier>{2280FA55-4070-4ACD-9F95-4F1E5BC4AC1F}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\BattleTank\Private\AITankController.cpp">
+			<Filter>Source\BattleTank\Private</Filter>
+		</ClCompile >
 		<ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp">
 			<Filter>Source\BattleTank\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\BattleTank\Public">
-			<UniqueIdentifier>{8E2FE618-1AE0-4B1F-969E-E7CDCEE9F1AF}</UniqueIdentifier>
+			<UniqueIdentifier>{1DC68F4B-AA0F-4109-8971-0F06A1C76D87}</UniqueIdentifier>
 		</Filter>
+		<ClInclude Include="..\..\Source\BattleTank\Public\AITankController.h">
+			<Filter>Source\BattleTank\Public</Filter>
+		</ClInclude >
 		<ClInclude Include="..\..\Source\BattleTank\Public\Tank.h">
 			<Filter>Source\BattleTank\Public</Filter>
 		</ClInclude >
