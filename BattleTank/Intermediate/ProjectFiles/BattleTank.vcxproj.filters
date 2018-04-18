@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\BattleTank.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{887A5401-AAB7-472B-9020-D7CD6F8D13F0}</UniqueIdentifier>
+			<UniqueIdentifier>{F57808BD-E1D6-4DA7-A03C-C7D65D99BBD9}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{C31A2E65-2BF1-4946-AAC1-0FB9F89F2F96}</UniqueIdentifier>
+			<UniqueIdentifier>{FA3D9AD6-CFC2-474D-AE12-EB416F3682E8}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\BattleTank">
-			<UniqueIdentifier>{40B4401B-F8CC-40D2-923C-B4DBB69BA972}</UniqueIdentifier>
+			<UniqueIdentifier>{B029376E-10CE-4BE6-9BF7-FA259356145B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank\BattleTank.Build.cs">
 			<Filter>Source\BattleTank</Filter>
@@ -52,18 +52,24 @@
 			<Filter>Source\BattleTank</Filter>
 		</ClInclude >
 		<Filter Include="Source\BattleTank\Private">
-			<UniqueIdentifier>{2280FA55-4070-4ACD-9F95-4F1E5BC4AC1F}</UniqueIdentifier>
+			<UniqueIdentifier>{D21F4741-5C52-4053-B06D-313968DAEAE8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\BattleTank\Private\AITankController.cpp">
+			<Filter>Source\BattleTank\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\BattleTank\Private\AntiFrictionModule.cpp">
 			<Filter>Source\BattleTank\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp">
 			<Filter>Source\BattleTank\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\BattleTank\Public">
-			<UniqueIdentifier>{1DC68F4B-AA0F-4109-8971-0F06A1C76D87}</UniqueIdentifier>
+			<UniqueIdentifier>{E1063885-F0B3-4068-8D30-4583C174903D}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\BattleTank\Public\AITankController.h">
+			<Filter>Source\BattleTank\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\BattleTank\Public\AntiFrictionModule.h">
 			<Filter>Source\BattleTank\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\BattleTank\Public\Tank.h">

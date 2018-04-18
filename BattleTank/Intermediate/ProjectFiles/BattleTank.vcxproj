@@ -422,8 +422,10 @@
 		<ClCompile Include="..\..\Source\BattleTank\TankPlayerController.cpp" />
 		<ClInclude Include="..\..\Source\BattleTank\TankPlayerController.h" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\AITankController.cpp" />
+		<ClCompile Include="..\..\Source\BattleTank\Private\AntiFrictionModule.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\AITankController.h" />
+		<ClInclude Include="..\..\Source\BattleTank\Public\AntiFrictionModule.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\Tank.h" />
 	</ItemGroup>
 	<PropertyGroup>

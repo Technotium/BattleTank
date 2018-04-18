@@ -3,6 +3,8 @@
 
 #include "TankPlayerController.h"
 
+ATank * ATankPlayerController::getControlledTank() const { return Cast<ATank>(GetPawn()); };
+
 ATankPlayerController::ATankPlayerController() {
 
 	PrimaryActorTick.bCanEverTick = true;
@@ -27,32 +29,3 @@ void ATankPlayerController::Tick(float DeltaTime) {
 }
 
 
-ATank* ATankPlayerController::getControlledTank() const { return Cast<ATank>(GetPawn()); }
-
-
-FVector2D ATankPlayerController::findCrosshairScreenSpace() const
-{
-	if (!myTank) { return; }
-	return;
-}
-
-FVector ATankPlayerController::convertSSToWS(FVector2D screenSpaceCrosshair) const
-{
-
-	return;
-}
-
-
-FHitResult ATankPlayerController::traceFromCrosshair(FVector worldSpaceCrosshair) const {
-	return;
-}
-
-FVector ATankPlayerController::getAimWorldLocation(FHitResult traceResult) const
-{
-	return;
-}
-
-void ATankPlayerController::aimToCrosshair(FVector locationUnderCrosshair)
-{
-	if (!myTank) { return; }
-}
