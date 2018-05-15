@@ -7,6 +7,9 @@
 #include "Components/Widget.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/PlayerController.h"
+#include "Camera/CameraComponent.h"
+#include "Components/ActorComponent.h"
+#include "Engine/World.h"
 #include "Tank.h"
 #include "TankPlayerController.generated.h"
 
@@ -35,7 +38,7 @@ private:
 	FVector convertSSToWS(FVector2D screenSpaceCrosshair) const;
 
 	// Trace from crosshair world location to what lies beneath the crosshair
-	FHitResult traceFromCrosshair(FVector worldSpaceCrosshair) const;
+	bool traceFromCrosshair(float reach, FVector translation, FRotator rotation, FVector& worldSpaceCrosshair) const;
 
 	// Get the place in the world that the crosshair is over
 	FVector getAimWorldLocation(FHitResult traceResult) const;
@@ -44,5 +47,8 @@ private:
 	void aimToCrosshair(FVector locationUnderCrosshair);
 	
 	ATank* myTank = nullptr;
+
+	UPROPERTY(EditAnywhere)
+		float reach = 100000.f;
 	
 };

@@ -29,6 +29,15 @@ private:
 
 	ATank* controlledTank = nullptr;
 	ATank* playerTank = nullptr;
+
+	void targetPlayer(ATank* player);
 	
+	/*  Aiming:
+		Find player and store the instance tank player is using
+		Get location of player tank
+		Calculate aim projectile physics to hit player tank
+		Move canon
+		Fire
+	*/
 };
 
