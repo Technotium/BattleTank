@@ -41,10 +41,13 @@ void ATankPlayerController::aimToCrosshair(FVector locationUnderCrosshair) {
 
 	FVector2D SSCoords = findCrosshairScreenSpace();
 	FVector WSCoords;
+	FVector lookTranslation;
+	FRotator lookRotation;
 
-	if (traceFromCrosshair(reach, PlayerCameraManager->GetCameraLocation(), GetControlRotation(), OUT WSCoords)) {
+	GetPlayerViewPoint(OUT lookTranslation, OUT lookRotation);
+
+	if (traceFromCrosshair(reach, lookTranslation, lookRotation, OUT WSCoords)) {
 		UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *WSCoords.ToString());
-
 		return;
 	}
 
@@ -73,6 +76,31 @@ bool ATankPlayerController::traceFromCrosshair(float reach, FVector translation,
 		traceParameters
 
 	);
+
+	DrawDebugLine(
+		GetWorld(),
+		translation,
+		rotation.Vector() * reach + translation,
+		{ 255,127,127 },
+		true,
+		0.5f,
+		000,
+		0.05f
+
+	);
+
+	DrawDebugBox(
+		GetWorld(),
+		lineTraceHit.Location,
+		{ 100.f, 100.f, 100.f },
+		{ 255, 127, 127 },
+		true,
+		0.5f,
+		000,
+		1.f
+
+
+		);
 
 	OutHitLocation = lineTraceHit.Location;
 

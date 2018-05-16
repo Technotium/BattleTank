@@ -10,6 +10,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/ActorComponent.h"
 #include "Engine/World.h"
+#include "DrawDebugHelpers.h"
 #include "Tank.h"
 #include "TankPlayerController.generated.h"
 
@@ -49,6 +50,6 @@ private:
 	ATank* myTank = nullptr;
 
 	UPROPERTY(EditAnywhere)
-		float reach = 100000.f;
+	float reach = 100000.f;
 	
 };
